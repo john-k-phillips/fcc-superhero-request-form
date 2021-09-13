@@ -1,0 +1,37 @@
+header {
+    width: 80%;
+    max-width: 800px;
+
+    #title {
+        margin-top: 1em;
+        font-size: clamp(4em, 10vw,10em);
+        position: relative;
+        font-family: $font-banger;
+        letter-spacing: 0.2em;
+        &::after {
+            content: 'Superhero Operation Protection';
+            display: block;
+            
+            font-size: 0.2em;
+            color: $clr-blue;
+            position: relative;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    #help-header {
+        font-family: $font-banger;
+        font-size: clamp(1.6em, 4vw, 3em);
+        margin-top: 2em;
+        letter-spacing: 0.2em;
+    }
+
+    p { 
+      font-weight: lighter;
+      font-size: clamp(0.6em, 2vw, 1.2em);
+      width: 90%;
+      max-width: 550px;
+      margin: auto;
+      opacity: 80%;
+    }
+}
