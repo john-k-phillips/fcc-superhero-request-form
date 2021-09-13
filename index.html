@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Superhero Operation Protection - Request a superhero to save your beans today!">
+    <meta name="keywords" content="Superhero, Form, FreeCodeCamp">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1674/1674292.png" type="image/x-icon">
+
+    <title>S.H.O.P</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">S.H.O.P</h1>
+        <span id="acronym-full">Superhero Operation Protection</span>
+        <p id="description">
+            In distress? Wedding day? Threat no longer, S.H.O.P to the rescue. 
+            Fly us a request and we’ll assemble our heros with flash fast service 
+        </p>
+    </header>
+    <main>
+        <form id="survey-form" autocomplete="off">
+            <div>
+                <label for="name">Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    required />
+                    <!-- Pattern for Email only Required -->
+            </div>
+            <div>
+                <label for="number">Contact Number:</label>
+                <input 
+                    type="tel"
+                    id="number"
+                    name="number" 
+                    min="11" />
+                    <!-- Pattern for Number only Required -->
+            </div>
+            <div>
+                <h3>Safety Plan:</h3>
+                <label for="flash-plan">Flash Plan</label>
+                <input 
+                    type="radio" 
+                    id="flash-plan" 
+                    name="safety-plan" 
+                    value="flash-plan"
+                    required
+                />
+                <label for="damsel-plan">Damsel Plan</label>
+                <input 
+                    type="radio" 
+                    id="damsel-plan" 
+                    name="safety-plan" 
+                    value="damsel-plan"
+                    required
+                />
+                <label for="bruce-plan">Bruce Plan</label>
+                <input 
+                    type="radio" 
+                    id="bruce-plan" 
+                    name="safety-plan" 
+                    value="bruce-plan"
+                    required
+                />
+                <label for="iron-plan">Iron Plan</label>
+                <input 
+                    type="radio" 
+                    id="iron-plan" 
+                    name="safety-plan" 
+                    value="iron-plan"
+                    required
+                />
+            </div>
+            <div>
+                <h3>Villain Responsible:</h3>
+                <select>
+                    <option value="lex-luther">Lex Luther</option>
+                    <option value="loki">Loki</option>
+                    <option value="joker">Joker</option>
+                    <option value="doofenshmirtz ">Heinz Doofenshmirtz</option>
+                    <option value="other">Other...</option>
+                </select>
+            </div>
+            <div>
+                <h3>Current Insurance Plans:</h3>
+                <label for="cape-insurance">Cape Insurance</label>
+                <input 
+                    type="checkbox" 
+                    id="cape-insurance" 
+                    name="insurance-plans" 
+                    value="cape-insurance" />
+                <label for="flight-insurance">Flight Insurance</label>
+                <input 
+                    type="checkbox" 
+                    id="flight-insurance" 
+                    name="insurance-plans" 
+                    value="flight-insurance" />
+                <label for="alley-insurance">Alley Insurance</label>
+                <input 
+                    type="checkbox" 
+                    id="alley-insurance" 
+                    name="insurance-plans" 
+                    value="alley-insurance" />
+                <label for="parent-insurance">Replacement Parents</label>
+                <input 
+                    type="checkbox" 
+                    id="parent-insurance" 
+                    name="insurance-plans" 
+                    value="parent-insurance" />
+                <label for="other-insurance">Other Insurance</label>
+                <input 
+                    type="checkbox"
+                    id="other-insurance" 
+                    name="insurance-plans" 
+                    value="other-insurance" />
+            </div>
+            <div>
+                <label for="desc">The Problem:</label>
+            </div>
+            <div>
+                <button type="submit">SUBMIT DISTRESS SIGNAL</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
