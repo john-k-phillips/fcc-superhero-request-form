@@ -37,12 +37,55 @@ header p {
   opacity: 80%;
 }
 
+main {
+  width: 80%;
+  max-width: 800px;
+  min-width: 280px;
+}
+
 #survey-form {
   background-color: rgba(128, 240, 255, 0.35);
-  width: 80%;
-  margin: 5em auto;
+  margin-top: 5em;
   padding: 2em;
+  width: 100%;
   border-radius: 0.5em;
+}
+
+#survey-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: clamp(1.2em, 3vw, 2em);
+}
+
+#survey-form div label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0.4em;
+}
+
+#survey-form div input {
+  border: 3px solid #2c2c2c;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  border-radius: 0.5em;
+}
+
+#survey-form div h3 {
+  font-weight: lighter;
+  text-align: left;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0.4em;
+}
+
+#survey-form #radio-form input {
+  display: none;
 }
 
 * {

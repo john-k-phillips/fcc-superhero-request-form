@@ -1,7 +1,45 @@
+main {
+    width: 80%;
+    max-width: 800px;
+    min-width: 280px;
+}
+
 #survey-form {
     background-color: rgba(128, 240, 255, 0.35);
-    width: 80%;
-    margin: 5em auto;
+    margin-top: 5em;
     padding: 2em;
+    width: 100%;
     border-radius: 0.5em;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        font-size: clamp(1.2em, 3vw, 2em);
+
+        label {
+            align-self: flex-start;
+            margin-bottom: 0.4em;
+        }
+
+        input {
+            border: 3px solid rgb(44, 44, 44);
+            padding: 0.5em;
+            margin-bottom: 1em;
+            font-size: 0.8em;
+            border-radius: 0.5em;
+        }
+
+        h3 {
+            font-weight: lighter;
+            text-align: left;
+            align-self: flex-start;
+            margin-bottom: 0.4em;
+        }
+    }
+    #radio-form {
+        input {
+            
+        }
+    }
 }
