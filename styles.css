@@ -84,10 +84,6 @@ main {
   margin-bottom: 0.4em;
 }
 
-#survey-form #radio-form input {
-  display: none;
-}
-
 * {
   padding: 0;
   margin: 0;
