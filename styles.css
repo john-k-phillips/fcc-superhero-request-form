@@ -110,16 +110,16 @@ main {
   font-weight: bold;
   color: white;
   font-size: clamp(0.8em, 2vw, 1.2em);
-  border: 3px solid transparent;
   border-radius: 0.5em;
   cursor: pointer;
   -webkit-transition: all 0.3ms ease-in-out;
   transition: all 0.3ms ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .primary-btn:focus, .primary-btn:hover {
-  background-color: transparent;
-  border-color: #FF6858;
+  background-color: #eb5848;
 }
 
 .radio-input {
@@ -149,6 +149,8 @@ main {
 
 .radio-input .custom-radio input[type="radio"]:checked ~ label {
   background-color: #FF6858;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .radio-input .custom-radio input[type="radio"]:checked ~ label h2 {
