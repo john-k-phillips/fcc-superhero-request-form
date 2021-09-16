@@ -71,15 +71,14 @@ main {
     color: white;
 
     font-size: clamp(0.8em, 2vw, 1.2em);
-    border: 3px solid transparent;
     border-radius: 0.5em;
     cursor: pointer;
     transition: all 0.3ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .primary-btn:focus, .primary-btn:hover {
-    background-color: transparent;
-    border-color: $clr-red;
+    background-color: #eb5848;
 }
 
 // CUSTOM RADIO
@@ -103,6 +102,7 @@ main {
 
         input[type="radio"]:checked ~ label {
             background-color: $clr-red;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             h2 {
                 color: white;
             }
