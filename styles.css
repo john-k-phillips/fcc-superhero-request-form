@@ -49,9 +49,10 @@ main {
   padding: 2em;
   width: 100%;
   border-radius: 0.5em;
+  margin-bottom: 2em;
 }
 
-#survey-form div {
+.text-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,28 +61,147 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: clamp(1.2em, 3vw, 2em);
+  position: relative;
 }
 
-#survey-form div label {
+.text-input label {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-bottom: 0.4em;
 }
 
-#survey-form div input {
+.text-input input {
   border: 3px solid #2c2c2c;
   padding: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-size: 0.8em;
   border-radius: 0.5em;
 }
 
-#survey-form div h3 {
-  font-weight: lighter;
-  text-align: left;
+.text-input :focus {
+  outline: none;
+  border-color: #FF6858;
+}
+
+.text-input :valid + p {
+  display: none;
+}
+
+.text-input p {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-bottom: 0.4em;
+  position: absolute;
+  bottom: 15px;
+  left: 1em;
+  font-size: 0.5em;
+  font-style: italic;
+  color: #FF6858;
+  font-weight: bold;
+  text-align: left;
+}
+
+.primary-btn {
+  outline: none;
+  border: none;
+  background-color: #FF6858;
+  padding: 1em;
+  margin-top: 1em;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+  border: 3px solid transparent;
+  border-radius: 0.5em;
+  cursor: pointer;
+  -webkit-transition: all 0.3ms ease-in-out;
+  transition: all 0.3ms ease-in-out;
+}
+
+.primary-btn:focus, .primary-btn:hover {
+  background-color: transparent;
+  border-color: #FF6858;
+}
+
+.radio-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5em;
+  position: relative;
+}
+
+.radio-input .custom-radio {
+  width: 100%;
+  font-family: "Bangers", cursive;
+  position: relative;
+  margin-top: 1em;
+}
+
+.radio-input .custom-radio input[type="radio"] {
+  display: none;
+}
+
+.radio-input .custom-radio input[type="radio"]:checked ~ label {
+  background-color: #FF6858;
+}
+
+.radio-input .custom-radio input[type="radio"]:checked ~ label h2 {
+  color: white;
+}
+
+.radio-input .custom-radio input[type="radio"]:checked ~ label span {
+  color: white;
+}
+
+.radio-input .custom-radio label {
+  padding: 2em;
+  border: 4px solid #2c2c2c;
+  border-radius: 0.5em;
+  background-color: white;
+  color: #2c2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-input .custom-radio label p, .radio-input .custom-radio label h2 {
+  display: inline;
+}
+
+.radio-input .custom-radio label p, .radio-input .custom-radio label span {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+.radio-input .custom-radio label p {
+  margin-top: 0.5em;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+}
+
+.radio-input .custom-radio label span {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: #FF6858;
+}
+
+.radio-input .custom-radio label h2 {
+  color: #FF6858;
+  letter-spacing: 0.2em;
 }
 
 * {
