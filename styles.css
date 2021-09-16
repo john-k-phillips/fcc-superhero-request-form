@@ -297,4 +297,13 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+footer {
+  margin-bottom: 2em;
+}
+
+footer span {
+  font-weight: bold;
+  color: #FF6858;
+}
 /*# sourceMappingURL=styles.css.map */

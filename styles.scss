@@ -35,5 +35,12 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+footer {
+    margin-bottom: 2em;
+    span {
+        font-weight: bold;
+        color: $clr-red;
+    }
 }
