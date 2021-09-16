@@ -13,6 +13,11 @@ main {
     margin-bottom: 2em;
 }
 
+label {
+    align-self: flex-start;
+    margin-bottom: 0.4em;
+}
+
 // STYLING TEXT BASED INPUTS
 
 .text-input {
@@ -22,11 +27,6 @@ main {
     font-size: clamp(1.2em, 3vw, 2em);
 
     position: relative;
-
-    label {
-        align-self: flex-start;
-        margin-bottom: 0.4em;
-    }
 
     input {
         border: 3px solid rgb(44, 44, 44);
@@ -151,5 +151,45 @@ main {
                 letter-spacing: 0.2em;
             }
         }
+    }
+}
+
+// DROPDOWN INPUT
+
+.input-dropdown {
+    display: flex;
+    flex-direction: column;
+    label {
+        font-size: clamp(1.2em, 3vw, 2em);
+    }
+    .custom-select {
+        width: 100%;
+        select {
+            width: 100%;
+            padding: 1em;
+            outline: none;
+            border: 3px solid rgb(44, 44, 44);
+            border-radius: 0.5em;
+        }
+    }
+}
+
+.input-textarea {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        border-radius: 0.5em;
+        border: 3px solid rgb(44, 44, 44);
+        height: 100px;
+        min-height: 100px;
+        max-height: 500px;
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    label {
+        margin-top: 1em;
+        font-size: clamp(1.2em, 3vw, 2em);
     }
 }

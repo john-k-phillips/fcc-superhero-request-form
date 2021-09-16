@@ -52,6 +52,12 @@ main {
   margin-bottom: 2em;
 }
 
+label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0.4em;
+}
+
 .text-input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +68,6 @@ main {
           flex-direction: column;
   font-size: clamp(1.2em, 3vw, 2em);
   position: relative;
-}
-
-.text-input label {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-bottom: 0.4em;
 }
 
 .text-input input {
@@ -204,6 +204,57 @@ main {
 .radio-input .custom-radio label h2 {
   color: #FF6858;
   letter-spacing: 0.2em;
+}
+
+.input-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-dropdown label {
+  font-size: clamp(1.2em, 3vw, 2em);
+}
+
+.input-dropdown .custom-select {
+  width: 100%;
+}
+
+.input-dropdown .custom-select select {
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: 3px solid #2c2c2c;
+  border-radius: 0.5em;
+}
+
+.input-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-textarea textarea {
+  border-radius: 0.5em;
+  border: 3px solid #2c2c2c;
+  height: 100px;
+  min-height: 100px;
+  max-height: 500px;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.input-textarea label {
+  margin-top: 1em;
+  font-size: clamp(1.2em, 3vw, 2em);
 }
 
 * {
