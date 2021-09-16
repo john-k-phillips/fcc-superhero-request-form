@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,132 +8,70 @@
 
     <meta name="description" content="Superhero Operation Protection - Request a superhero to save your beans today!">
     <meta name="keywords" content="Superhero, Form, FreeCodeCamp">
-    
+
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1674/1674292.png" type="image/x-icon">
 
     <title>S.H.O.P</title>
 </head>
+
 <body translate="no">
     <header>
         <h1 id="title">S.H.O.P</h1>
         <h2 id="help-header">HELP! REQUEST A HERO</h2>
         <p id="description">
-            In distress? Wedding day? Threat no longer, S.H.O.P to the rescue. 
-            Fly us a request and we’ll assemble our heros with flash fast service 
+            In distress? Wedding day? Threat no longer, S.H.O.P to the rescue.
+            Fly us a request and we’ll assemble our heros with flash fast service
         </p>
     </header>
     <main>
         <form id="survey-form" autocomplete="off">
-            <div>
+            <div class="text-input">
                 <label for="name">Name:</label>
-                <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    required />
+                <input type="text" id="name" name="name" autofocus required />
+                <p>Please input your name.</p>
             </div>
-            <div>
+            <div class="text-input">
                 <label for="email">Email:</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    required />
-                    <!-- Pattern for Email only Required -->
+                <input type="email" id="email" name="email" required />
+                <p>Please input your email address.</p>
+            </div>
+            <div class="text-input">
+                <label for="location">Last Location:</label>
+                <input type="text" id="location" name="location" required />
+                <p>Where were you last? I.E Metropolis.</p>
+            </div>
+            <div class="radio-input">
+                <div class="custom-radio">
+                    <input type="radio" id="flash-plan" name="plans" value="flash-plan" checked="checked" />
+                    <label for="flash-plan">
+                        <h2>FLASH PLAN</h2>
+                        <p>So fast you wont even notice you've been saved.</p>
+                        <span>$79.99</span>
+                    </label>
+                </div>
+                <div class="custom-radio">
+                    <input type="radio" id="damsel-plan" name="plans" value="damsel-plan" />
+                    <label for="damsel-plan">
+                        <h2>DAMSEL PLAN</h2>
+                        <p>If we hear your screams, we'll send a rookie hero.</p>
+                        <span>FREE PLAN</span>
+                    </label>
+                </div>
+                <div class="custom-radio">
+                    <input type="radio" id="bruce-plan" name="plans" value="bruce-plan" />
+                    <label for="bruce-plan">
+                        <h2>BRUCE PLAN</h2>
+                        <p>When money is the problem.</p>
+                        <span>$99.99</span>
+                    </label>
+                </div>
+                <div class="custom-radio">
+
+                </div>
             </div>
             <div>
-                <label for="number">Contact Number:</label>
-                <input 
-                    type="tel"
-                    id="number"
-                    name="number" 
-                    min="11" />
-                    <!-- Pattern for Number only Required -->
-            </div>
-            <div class="radio-form">
-                <h3>Safety Plan:</h3>
-                    <label for="flash-plan">Flash Plan</label>
-                    <input 
-                        type="radio" 
-                        id="flash-plan" 
-                        name="safety-plan" 
-                        value="flash-plan"
-                        required
-                    />
-                <label for="damsel-plan">Damsel Plan</label>
-                <input 
-                    type="radio" 
-                    id="damsel-plan" 
-                    name="safety-plan" 
-                    value="damsel-plan"
-                    required
-                />
-                <label for="bruce-plan">Bruce Plan</label>
-                <input 
-                    type="radio" 
-                    id="bruce-plan" 
-                    name="safety-plan" 
-                    value="bruce-plan"
-                    required
-                />
-                <label for="iron-plan">Iron Plan</label>
-                <input 
-                    type="radio" 
-                    id="iron-plan" 
-                    name="safety-plan" 
-                    value="iron-plan"
-                    required
-                />
-            </div>
-            <div class="dropdown-form">
-                <h3>Villain Responsible:</h3>
-                <select>
-                    <option value="lex-luther">Lex Luther</option>
-                    <option value="loki">Loki</option>
-                    <option value="joker">Joker</option>
-                    <option value="doofenshmirtz ">Heinz Doofenshmirtz</option>
-                    <option value="other">Other...</option>
-                </select>
-            </div>
-            <div class="checkbox-form">
-                <h3>Current Insurance Plans:</h3>
-                <label for="cape-insurance">Cape Insurance</label>
-                <input 
-                    type="checkbox" 
-                    id="cape-insurance" 
-                    name="insurance-plans" 
-                    value="cape-insurance" />
-                <label for="flight-insurance">Flight Insurance</label>
-                <input 
-                    type="checkbox" 
-                    id="flight-insurance" 
-                    name="insurance-plans" 
-                    value="flight-insurance" />
-                <label for="alley-insurance">Alley Insurance</label>
-                <input 
-                    type="checkbox" 
-                    id="alley-insurance" 
-                    name="insurance-plans" 
-                    value="alley-insurance" />
-                <label for="parent-insurance">Replacement Parents</label>
-                <input 
-                    type="checkbox" 
-                    id="parent-insurance" 
-                    name="insurance-plans" 
-                    value="parent-insurance" />
-                <label for="other-insurance">Other Insurance</label>
-                <input 
-                    type="checkbox"
-                    id="other-insurance" 
-                    name="insurance-plans" 
-                    value="other-insurance" />
-            </div>
-            <div>
-                <label for="desc">The Problem:</label>
-            </div>
-            <div>
-                <button type="submit">SUBMIT DISTRESS SIGNAL</button>
+                <button class="primary-btn" type="submit">SUBMIT DISTRESS SIGNAL</button>
             </div>
         </form>
     </main>
@@ -140,4 +79,5 @@
 
     </footer>
 </body>
+
 </html>
