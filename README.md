@@ -17,6 +17,7 @@ freeCodeCamp is a non-profit organization that consists of an interactive learni
 
 <h2>Overview</h2>
 <p>
-  I needed practice with HTML forms and over time I have improved; this was a great start to my learning curve for inputs. I did a lot of research to get the inputs as I wanted
-  and I believe it produced some nice results for a first 'form' related project.
+I needed practice with HTML forms and over time I have improved; this was a great start to my learning curve for inputs. 
+ 
+I did a lot of research to get the inputs as I wanted and I believe it produced some nice results for a first 'form' related project.
 </p>
